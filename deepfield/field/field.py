@@ -442,7 +442,7 @@ class Field:
             self.wells.blocks_to_spatial(self.grid)
         return self
 
-    @deprecated(reason="Renamed to_spatial")
+    @deprecated(reason="Renamed to_spatial", version="0.1.0")
     def unravel(self, *args, **kwargs):
         """Alias for `to_spatial` method."""
         return self.to_spatial(*args, **kwargs)
