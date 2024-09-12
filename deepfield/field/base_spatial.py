@@ -120,7 +120,7 @@ class SpatialComponent(BaseComponent):
         _ = attr, inplace, kwargs
         raise NotImplementedError()
 
-    @deprecated(reason="Renamed to_spatial")
+    @deprecated(reason="Renamed to_spatial", version="0.1.0")
     def unravel(self, *args, **kwargs):
         """Alias for `to_spatial` method."""
         return self.to_spatial(*args, **kwargs)
